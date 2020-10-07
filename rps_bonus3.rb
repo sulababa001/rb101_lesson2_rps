@@ -10,17 +10,6 @@ VALID_RESPONSE = %w(y yes n no)
 
 def win?(first, second)
   GAME_LOGIC[first.to_sym].include?(second)
-
-  # (first == 'r') && (second == 's') ||
-  #   (first == 'r' && second == 'l') ||
-  #   (first == 'p' && second == 'r') ||
-  #   (first == 'p' && second == 'sp') ||
-  #   (first == 's' && second == 'p') ||
-  #   (first == 's' && second == 'l') ||
-  #   (first == 'l' && second == 'p') ||
-  #   (first == 'l' && second == 'sp') ||
-  #   (first == 'sp' && second == 's') ||
-  #   (first == 'sp' && second == 'r')
 end
 
 def prompt(message)
